@@ -6,22 +6,21 @@ class Nextpage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xffF7F7F7),
+      appBar: AppBar(
+        backgroundColor: Color(0xffF7F7F7),
+      ),
       body: Padding(
-        padding: const EdgeInsets.all(20.0),
+        padding: const EdgeInsets.symmetric(horizontal: 24.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const SizedBox(height: 60),
             Center(
-              child: Text(
-                'Cloozy',
-                style: TextStyle(
-                  fontSize: 28,
-                  fontWeight: FontWeight.bold,
-                  fontFamily: 'Cursive',
-                ),
-              ),
-            ),
+                child: Image.asset(
+              'assets/imeges/cloozy.png',
+              width: 200,
+            )),
             const SizedBox(height: 20),
             const Text(
               'Sign Up',
@@ -123,17 +122,6 @@ class Nextpage extends StatelessWidget {
             ),
           ],
         ),
-      ),
-    );
-  }
-
-  Widget _buildTextField(String label) {
-    return TextField(
-      obscureText: true,
-      decoration: InputDecoration(
-        labelText: label,
-        border: OutlineInputBorder(),
-        suffixIcon: Icon(Icons.visibility_off),
       ),
     );
   }

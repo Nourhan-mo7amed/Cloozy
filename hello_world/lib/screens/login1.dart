@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hello_world/screens/Forget_Page.dart';
 
 import 'package:hello_world/screens/signup.dart';
 
@@ -85,13 +86,18 @@ class LoginScreen extends StatelessWidget {
                     ),
                   ],
                 ),
-                TextButton(
-                  onPressed: () {},
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) {
+                      return Forget_Page();
+                    }));
+                  },
                   child: const Text("Forgot password?",
                       style: TextStyle(
                           color: Color(0xff003B5C),
                           fontWeight: FontWeight.bold)),
-                ),
+                )
               ],
             ),
             const SizedBox(height: 20),
@@ -186,4 +192,4 @@ class LoginScreen extends StatelessWidget {
   }
 }
 
-class Signin {}
+
