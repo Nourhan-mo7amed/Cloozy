@@ -139,7 +139,7 @@ class LoginScreen extends StatelessWidget {
                 ),
               ],
             ),
-            const SizedBox(height: 10),
+            const SizedBox(height: 30),
             Row(
               children: const [
                 Expanded(child: Divider()),
@@ -150,7 +150,7 @@ class LoginScreen extends StatelessWidget {
                 Expanded(child: Divider()),
               ],
             ),
-            const SizedBox(height: 20),
+            const SizedBox(height: 30),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -177,7 +177,11 @@ class LoginScreen extends StatelessWidget {
                   ),
                   child: Row(
                     children: [
-                      Icon(Icons.g_mobiledata, color: Colors.red, size: 30),
+                      Image.asset(
+                        'assets/icons_images/google.png',
+                        width: 20,
+                        height: 20,
+                      ),
                       SizedBox(width: 10),
                       Text("Google", style: TextStyle(fontSize: 16)),
                     ],
@@ -191,5 +195,3 @@ class LoginScreen extends StatelessWidget {
     );
   }
 }
-
-

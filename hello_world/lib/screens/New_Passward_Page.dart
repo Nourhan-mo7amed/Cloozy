@@ -42,7 +42,6 @@ class _New_PasswardState extends State<New_Passward> {
                     style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
                   )),
               SizedBox(height: 5),
-             
               TextField(
                 obscureText: !_isPasswordVisible,
                 decoration: InputDecoration(
@@ -72,7 +71,6 @@ class _New_PasswardState extends State<New_Passward> {
                     style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
                   )),
               SizedBox(height: 5),
-             
               TextField(
                 obscureText: !_isConfirmPasswordVisible,
                 decoration: InputDecoration(
@@ -95,8 +93,6 @@ class _New_PasswardState extends State<New_Passward> {
                 ),
               ),
               SizedBox(height: 40),
-
-            
               SizedBox(
                 width: double.infinity,
                 height: 50,
