@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hello_world/screens/Forget_Page.dart';
+import 'package:hello_world/screens/dashbord.dart';
 
 import 'package:hello_world/screens/signup.dart';
 
@@ -9,7 +10,7 @@ class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xffF7F7F7),
+      backgroundColor: Color(0xfffaf9f6),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 24.0),
         child: Column(
@@ -105,7 +106,11 @@ class LoginScreen extends StatelessWidget {
               width: double.infinity,
               height: 50,
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return dashboard();
+                  }));
+                },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Color(0xff003B5C),
                   shape: RoundedRectangleBorder(
