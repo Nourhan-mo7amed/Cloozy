@@ -182,7 +182,6 @@ class dashboard extends StatelessWidget {
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  // النصوص تحت بعض في Column
                   Expanded(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -238,8 +237,6 @@ class dashboard extends StatelessWidget {
                       ],
                     ),
                   ),
-
-                  // الرسم البياني على أقصى اليمين
                   SizedBox(
                     width: 140,
                     child: PieChart(
@@ -293,7 +290,6 @@ class dashboard extends StatelessWidget {
               ),
               child: Column(
                 children: [
-                  // عنوان الجدول
                   Container(
                     padding: EdgeInsets.symmetric(vertical: 10, horizontal: 16),
                     decoration: BoxDecoration(
@@ -326,7 +322,6 @@ class dashboard extends StatelessWidget {
                       ],
                     ),
                   ),
-                  // الطلبات
                   ...orders.map(
                     (order) => Container(
                       padding:
